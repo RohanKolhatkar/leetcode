@@ -1,0 +1,38 @@
+
+// bluedawnstar's avatar
+// bluedawnstar
+// 677
+// Last Edit: October 18, 2018 1:25 PM
+
+// 65.0K VIEWS
+
+class Solution {
+public:
+    string decodeString(const string& s, int& i) {
+        string res;
+        
+        while (i < s.length() && s[i] != ']') {
+            if (!isdigit(s[i]))
+                res += s[i++];
+            else {
+                int n = 0;
+                while (i < s.length() && isdigit(s[i]))
+                    n = n * 10 + s[i++] - '0';
+                    
+                i++; // '['
+                string t = decodeString(s, i);
+                i++; // ']'
+                
+                while (n-- > 0)
+                    res += t;
+            }
+        }
+        
+        return res;
+    }
+
+    string decodeString(string s) {
+        int i = 0;
+        return decodeString(s, i);
+    }
+};
