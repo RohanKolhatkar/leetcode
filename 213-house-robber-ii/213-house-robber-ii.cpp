@@ -20,6 +20,7 @@ public:
         int n=nums.size();
         if(n==1) return nums[0];
         if(n==2) return max(nums[0], nums[1]);
+        if(n==3) return max(max(nums[0], nums[1]),nums[2]);
         vector<int> not_first={nums.begin()+1, nums.end()};
         vector<int> not_last={nums.begin(), nums.end()-1};
         
