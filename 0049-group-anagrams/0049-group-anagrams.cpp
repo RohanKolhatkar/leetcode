@@ -1,3 +1,5 @@
+// the logic here is to use that the anagrams that are taken if we will sort the anagrams they will become the ssame string and if they are same after sorted that means thay are angram of each other.
+
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
