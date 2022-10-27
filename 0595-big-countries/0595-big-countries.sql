@@ -1,6 +1,6 @@
 # Write your MySQL query statement below
 
 
-select name,area,population
+select name,area,population # remember the order doesnt matter in leetocde
 from world
 where area>=3000000 or population >=25000000;
