@@ -16,7 +16,7 @@ public:
     
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int newColor)
     {
-        int val = image[sr][sc];
+        int val = image[sr][sc];   // this is our initial color.
         dfs(image,sr,sc,val,newColor);
         return image;
     }
