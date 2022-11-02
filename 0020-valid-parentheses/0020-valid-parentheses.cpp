@@ -3,9 +3,6 @@ public:
     bool isValid(string s) {
         stack<char> st;
         int n = s.length();
-        
-        
-        
             
            for(int i = 0; i < n; i++){   
             
@@ -28,9 +25,6 @@ public:
                 }
            
         }
-        
-        // if(c == 0)
-        //     return true;
         return st.empty();
     }
 };
