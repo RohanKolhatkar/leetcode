@@ -42,6 +42,13 @@ class Solution {
                 }
             }
         }
+        
+        
+        // for(int i=0; i<N; i++){
+        //     if(s[i] != '?' && s[i+1]==s[i]){
+        //         while()
+        //     }
+        // }
         return dayCnt;
     }
 };
