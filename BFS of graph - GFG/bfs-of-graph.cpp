@@ -12,7 +12,7 @@ class Solution {
     
     vector<int> bfsOfGraph(int V, vector<int> adj[]) {
         // Code here
-        vector<bool>vis(V+1,false);
+        vector<bool>vis(V,false);
         vector<int>ans;
         queue<int>q;
         q.push(0);
