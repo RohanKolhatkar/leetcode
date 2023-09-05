@@ -13,17 +13,17 @@ class Solution {
         map<int,vector<int>>mpp;
         for(auto x: edges){
             // pair<int,int> p = x;
-            vector<int>temp = mpp[x.first];
-            auto it1 = find(temp.begin(),temp.end(), x.second);
-            if(it1 == temp.end()){
+            // vector<int>temp = mpp[x.first];
+            // auto it1 = find(temp.begin(),temp.end(), x.second);
+            // if(it1 == temp.end()){
                 mpp[x.first].push_back(x.second);
-            }
+            // }
             
-            vector<int>temp1 = mpp[x.second];
-            auto it2 = find(temp1.begin(),temp1.end(), x.first);
-            if(it2 == temp1.end()){
+            // vector<int>temp1 = mpp[x.second];
+            // auto it2 = find(temp1.begin(),temp1.end(), x.first);
+            // if(it2 == temp1.end()){
                 mpp[x.second].push_back(x.first);
-            }
+            // }
             
         }
         
