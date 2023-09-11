@@ -13,9 +13,14 @@ class Solution
 {
     public:
     string reverseWord(string str)
-    {
-        reverse(str.begin(),str.end());
-        return str;
+    {   
+        int n = str.size();
+        string s = "";
+        for(int i= n-1; i>=0; i--){
+            s +=str[i];
+        }
+        
+        return s;
     }
 };
 
