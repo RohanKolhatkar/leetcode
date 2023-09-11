@@ -16,7 +16,6 @@ class Solution
     {
         reverse(str.begin(),str.end());
         return str;
-        // Your code goes here
     }
 };
 
